@@ -26,23 +26,49 @@ public class TeslaModelConfiguratorSteps {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
-    @Given("^je suis sur la homepage$")
-    public void je_suis_sur_la_homepage() throws Throwable {
-        driver.get("https://www.meetup.com/fr-FR/");
+    @Given("je suis sur la page {string}")
+    public void je_suis_sur_la_page(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @Then("^le titre doit être \"([^\"]*)\"$")
-    public void le_titre_doit_être(String arg1) throws Throwable {
-        assertEquals(driver.getTitle(), arg1);
+
+    @Then("Par defaut prix LOA est {string}")
+    public void par_defaut_prix_loa_est(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @Then("^la description contient \"([^\"]*)\"$")
-    public void la_description_doit_être(String arg1) throws Throwable {
-        // By CSS Selector
-        assertTrue(driver.findElement(By.cssSelector("meta[name='description']")).getAttribute("content").contains(arg1));
-        // By XPATH, si vous préférez...
-        // assertEquals(driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content"), arg1);
+    @Then("A la selection du modele {string} prix LOA {string} carburant {string} montant total {string}")
+    public void a_la_selection_du_modele_prix_loa_carburant_montant_total(String string, String string2, String string3, String string4) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
+
+    @Then("A la sélection option {string} prix augmente par mois {string}")
+    public void a_la_sélection_option_prix_augmente_par_mois(String string, String string2) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Then("Apres config, click logo gauche et vérifier si popup gauche existe")
+    public void apres_config_click_logo_gauche_et_vérifier_si_popup_gauche_existe() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Then("Dans popup selectionner {string}")
+    public void dans_popup_selectionner(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+    @Then("Le lien {string} contient url {string}")
+    public void le_lien_contient_url(String string, String string2) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
 
     @After
     public void afterScenario() {
