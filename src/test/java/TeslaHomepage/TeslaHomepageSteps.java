@@ -48,6 +48,7 @@ public class TeslaHomepageSteps {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
     @Then("le menu de haut contient un lien {string} menant vers {string}")
     public void le_menu_de_haut_contient_un_lien_menant_vers(String string, String string2) {
         // Write code here that turns the phrase above into concrete actions

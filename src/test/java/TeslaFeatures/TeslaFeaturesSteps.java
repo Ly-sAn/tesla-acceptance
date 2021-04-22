@@ -27,23 +27,18 @@ public class TeslaFeaturesSteps {
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
-    @Given("^je suis sur la homepage$")
-    public void je_suis_sur_la_homepage() throws Throwable {
-        driver.get("https://www.meetup.com/fr-FR/");
+    @Given("je suis sur la page {string}")
+    public void je_suis_sur_la_page(String string) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @Then("^le titre doit être \"([^\"]*)\"$")
-    public void le_titre_doit_être(String arg1) throws Throwable {
-        assertEquals(driver.getTitle(), arg1);
+    @Then("Pour la {string}, les valeurs {string}, {string}, {string} correspondent")
+    public void pour_la_les_valeurs_correspondent(String string, String string2, String string3, String string4) {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 
-    @Then("^la description contient \"([^\"]*)\"$")
-    public void la_description_doit_être(String arg1) throws Throwable {
-        // By CSS Selector
-        assertTrue(driver.findElement(By.cssSelector("meta[name='description']")).getAttribute("content").contains(arg1));
-        // By XPATH, si vous préférez...
-        // assertEquals(driver.findElement(By.xpath("//meta[@name='description']")).getAttribute("content"), arg1);
-    }
 
     @After
     public void afterScenario() {
